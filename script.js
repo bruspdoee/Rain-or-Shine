@@ -118,3 +118,13 @@ if (navigator.geolocation) {
 	});
 }
 
+var queryURL = "https://cors-anywhere.herokuapp.com/http://api.eventful.com/rest/events/search?app_key=zc9tCd5xHQ68P7wJ&where=40.7128,-74.0060&within=25&t=Today";
+
+$.ajax({
+	url: queryURL,
+	method: "GET"
+  }).then(function(response) {
+	console.log(response);
+	
+});
+

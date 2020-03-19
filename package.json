@@ -1,0 +1,23 @@
+{
+  "name": "sloppy-joes-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "xml-json": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruspdoee/Sloppy-Joes-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bruspdoee/Sloppy-Joes-/issues"
+  },
+  "homepage": "https://github.com/bruspdoee/Sloppy-Joes-#readme"
+}
