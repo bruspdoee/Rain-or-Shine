@@ -3,7 +3,7 @@ if (navigator.geolocation) {
 		var lat = position.coords.latitude;
 		var long = position.coords.longitude;
 		var corsUrl = "https://cors-anywhere.herokuapp.com/"
-		var apiKey = "b957b35d837a7435ccd78c535af289ed";
+		var apiKey = "16ed8c861f9ac550f753a3fd507835a8";
 		var api = "https://api.darksky.net/forecast/";
 		var url = corsUrl + api + apiKey + "/" + lat + "," + long  + "?daily";
 
