@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RainORShine</title>
+	<title>Rain or Shine</title>
 
-  	<!-- Boostrap 3 CSS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Boostrap 3 CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<!-- Weather icons -->
@@ -15,30 +16,41 @@
 	<!-- Font awesome -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Font Import -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600' rel='stylesheet'> -->
 
 	<link href="https://fonts.googleapis.com/css?family=Pacifico|Cookie|Lora" rel="stylesheet">
 
 	<!-- Custom style -->
 	<link rel="stylesheet" href="style.css">
 
+	<!-- Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Moment.JS script -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js'></script>
+
+	<!-- Custom script -->
+	<script type="text/javascript" src="script.js"></script>
+
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	<div>
-		<ul class="navbar-nav">
-		  <li class="nav-item active">
-			<a class="nav-link" href="index.html">Rain or Shine <span class="sr-only">(current)</span></a>
-		  </li>
-		  <li class="nav-item">
-			<a class="navbar-brand" href="about.html">About</a>
-		  </li>
-	  </ul>
-	</div>
-</nav>
-
 <body class="weather">
+
+	<div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        
+         
+        </div>
+      </div>
+
 	<div class="container-fluid">
+		
+
+			
 			<div class="row">
 				<div class="col-md-3"></div>
 				<div class="col-md-6">
@@ -53,6 +65,7 @@
 										<!-- <div class="forecast0"></div> -->
 									</div>
 									
+
 									<div class="col-md-6 temperature">
 										<span class="temp0"></span>
 										<div class="convertTemp">
@@ -67,11 +80,10 @@
 								<div>
 									<span class="day0"></span>, 
 									<span class="time"></span>
-                </div>
-                
+								</div>
 								<div>
-									<span class="month"></span>
-									<span class="date0"></span>,
+									<span class="date0"></span>
+									<span class="month"></span>,
 									<span class="year"></span>
 								</div>
 								<div class="location"></div>
@@ -86,7 +98,7 @@
 						</div>
 						<!-- End current day's forecast -->
 
-						<!-- <img src="boat.jpg" width="50%" height="50%"> -->
+					
 						
 						<div class="row daily">
 
@@ -152,22 +164,12 @@
 
 						</div>
 					</div>
+					
 				</div>
 				<div class="col-md-3"></div>
 			</div>
 		</div>
-  </div>
-  
-
-	<!-- Jquery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-	<!-- Moment.JS script -->
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js'></script>
-
-	<!-- Custom script -->
-	<script type="text/javascript" src="script.js"></script>
-
+	</div>
 </body>
 
 </html>
