@@ -12,24 +12,27 @@ p {
 
 #display div {
   text-align: center; 
+  border-top: black 3px solid;
+  position: relative;
+}
+
+#borderTop {
+top: 50%;
 }
 
 #display p {
   text-align: center;
 }
 
-/* #display > p {
-  /* text-align: center;  */
-
-} */
-
+#spacer-row h1 {
+  font-size: 85px;
+}
 
 .weather{
   color: #858585;
   /*background: #e0ffff; */
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO1WE9yC5sYWVZXP9AnMK_ImZNZBBGRn4RWcd_Ito1szk8t3Ae-w);
   background-size: cover;
-
 }
 
 .weather-body {
