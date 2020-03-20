@@ -126,5 +126,32 @@ $.ajax({
   }).then(function(response) {
 	console.log(response);
 	
+	var eventResult = $(response).find("event");
+	console.log(eventResult);
+
+	for (var i = 0; i < eventResult.length; i++) {
+		console.log(eventResult[i]);
+
+		var display = $("#display"); 
+		var eventDiv = document.createElement("div"); 
+		var eventTitle = document.createElement("h1"); 
+		var eventLocation = document.createElement("p"); 
+		var eventTime = document.createElement("p"); 
+		var eventLink = document.createElement("p"); 
+
+		eventTitle.innerHTML = eventResult[i].children[0].innerHTML
+		eventLink.innerHTML = eventResult[i].children[1].innerHTML
+		eventLocation.innerHTML = eventResult[i].children[12].innerHTML
+		eventTime.innerHTML = eventResult[i].children[3].innerHTML
+
+		display.append(eventDiv);
+		display.append(eventTitle); 
+		display.append(eventLink); 
+		display.append(eventLocation);
+		display.append(eventTime); 
+
+	}
+
+	
 });
 

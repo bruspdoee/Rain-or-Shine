@@ -10,6 +10,19 @@ p {
   font-family: 'Catamaran', sans-serif;
 }
 
+#display div {
+  text-align: center; 
+}
+
+#display p {
+  text-align: center;
+}
+
+/* #display > p {
+  /* text-align: center;  */
+
+} */
+
 
 .weather{
   color: #858585;
