@@ -140,7 +140,9 @@ $.ajax({
 		var eventImage = document.createElement("img");
 		var eventLocation = document.createElement("p"); 
 		var eventTime = document.createElement("p"); 
-		var eventLink = document.createElement("p"); 
+		var eventLink = document.createElement("a");
+		eventLink.href = eventResult[i].children[1].innerHTML;
+		eventLink.target = "_blank"; 
 
 		eventTitle.innerHTML = eventResult[i].children[0].innerHTML
 		eventLink.innerHTML = eventResult[i].children[1].innerHTML
@@ -154,6 +156,7 @@ $.ajax({
 			eventImage.src = "https://pbs.twimg.com/media/DsVJ-3EU8AASNtg?format=jpg&name=medium"; 
 		}
 
+		eventImage.className = "eventImageThumb";
 
 		display.append(eventDiv);
 		display.append(eventTitle); 
