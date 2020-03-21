@@ -41,6 +41,34 @@ top: 50%;
   text-align: center;
 }
 
+div.forecast0 {
+  font-size: 15px;
+}
+
+div.forecast1 {
+  font-size: 15px;
+}
+
+div.forecast2 {
+  font-size: 15px;
+}
+
+div.forecast3 {
+  font-size: 15px;
+}
+
+div.forecast4 {
+  font-size: 15px;
+}
+
+div.forecast5 {
+  font-size: 15px;
+}
+
+div.forecast6 {
+  font-size: 15px;
+}
+
 #display {
   overflow-y: scroll; 
   height: 450px;
@@ -60,7 +88,7 @@ col-md-6
 .weather{
   color: #858585;
   /*background: #e0ffff; */
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO1WE9yC5sYWVZXP9AnMK_ImZNZBBGRn4RWcd_Ito1szk8t3Ae-w);
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO1WE9yC5sYWVZXP9AnMK_ImZNZBBGRn4RWcd_Ito1szk8t3Ae-w) no-repeat;
   background-size: cover;
 }
 
