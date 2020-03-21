@@ -124,17 +124,20 @@ $.ajax({
 	url: queryURL,
 	method: "GET"
   }).then(function(response) {
-	console.log(response);
+	// console.log(response);
 	
 	var eventResult = $(response).find("event");
-	console.log(eventResult);
+	// console.log(eventResult);
 
 	for (var i = 0; i < eventResult.length; i++) {
 		console.log(eventResult[i]);
+		// console.log(eventResult[i].children[36].firstElementChild.innerHTML);
+		console.log(i); 
 
 		var display = $("#display"); 
 		var eventDiv = document.createElement("div"); 
 		var eventTitle = document.createElement("h1"); 
+		var eventImage = document.createElement("img");
 		var eventLocation = document.createElement("p"); 
 		var eventTime = document.createElement("p"); 
 		var eventLink = document.createElement("p"); 
@@ -144,8 +147,17 @@ $.ajax({
 		eventLocation.innerHTML = eventResult[i].children[12].innerHTML
 		eventTime.innerHTML = eventResult[i].children[3].innerHTML
 
+		if(eventResult[i].children[36].firstElementChild){
+			eventImage.src = eventResult[i].children[36].firstElementChild.innerHTML
+		}
+		else{
+			eventImage.src = "https://pbs.twimg.com/media/DsVJ-3EU8AASNtg?format=jpg&name=medium"; 
+		}
+
+
 		display.append(eventDiv);
 		display.append(eventTitle); 
+		display.append(eventImage);
 		display.append(eventLink); 
 		display.append(eventLocation);
 		display.append(eventTime); 
