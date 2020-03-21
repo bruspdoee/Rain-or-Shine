@@ -6,13 +6,30 @@ h1 {
   font-size: 50px;
 }
 
+body{
+  height: 100vh;
+  padding-bottom: 40px;
+  overflow-y: hidden;
+}
+
+.eventImageThumb{
+height: 75px;
+width: 75px;
+float: left;
+}
+
+.row2{
+  height: 50px;
+  margin-top: 50px;
+}
+
 p {
   font-family: 'Catamaran', sans-serif;
 }
 
-#display div {
+#display {
   text-align: center; 
-  border-top: black 3px solid;
+  border: black 3px solid;
   position: relative;
 }
 
@@ -23,6 +40,18 @@ top: 50%;
 #display p {
   text-align: center;
 }
+
+#display {
+  overflow-y: scroll; 
+  height: 450px;
+} 
+
+#display {
+  margin: 0 auto;
+  float: center;
+}
+
+col-md-6
 
 #spacer-row h1 {
   font-size: 85px;
