@@ -6,12 +6,6 @@ h1 {
   font-size: 50px;
 }
 
-body{
-  height: 100vh;
-  padding-bottom: 40px;
-  overflow-y: hidden;
-}
-
 .eventImageThumb{
 height: 75px;
 width: 75px;
@@ -21,6 +15,10 @@ float: left;
 .row2{
   height: 50px;
   margin-top: 50px;
+}
+
+#aboutLine1 p {
+  text-align: center;
 }
 
 p {

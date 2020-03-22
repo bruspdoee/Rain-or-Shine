@@ -1,131 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-      
-  
-    
+
     <meta charset="UTF-8">
 
-	<title>Rain or Shine</title>
+    <title>Rain or Shine</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Boostrap 3 CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Boostrap 3 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<!-- Weather icons -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css"> 
+    <!-- Weather icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
 
-	<!-- Font awesome -->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-	<!-- Font Import -->
-	<!-- <link href='http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600' rel='stylesheet'> -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Cookie|Lora" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css?family=Pacifico|Cookie|Lora" rel="stylesheet">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="style.css">
 
-	<!-- Custom style -->
-	<link rel="stylesheet" href="style.css">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<!-- Jquery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<!-- Moment.JS script -->
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js'></script>
-
-	<!-- Custom script -->
-    <script type="text/javascript" src="js/main.js"></script>
-  
+    <!-- Moment.JS script -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js'></script>
 
 </head>
 
-
-
 <body class="weather">
 
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-  </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </div>
 
-	<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-3"></div>
-				<div class="col-md-6">
-                    <h1> Rain or Shine </h1>
-                    </div>
-                <div class="col-md-3"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1> Rain or Shine </h1>
             </div>
-   
-    <div class="card border-light mb-3" style="max-width: 18rem;">
-        <div class="card-header">Developers</div>
-      </div>
-  
-      <div class="card mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="https://noonanelectricalservices.com/wp-content/uploads/2017/07/man-portrait-silhouette.gif" class="card-img" alt="..." height="75%" width="100%">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Antonio Berryman</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6" id="aboutLine1">
+            <p> New York is one of the most active cities in the world where there’s always an event to attend, a new pop-up to check out, a seasonal activity to engage in, or a limited time museum exhibit to check out.
+
+              The problem is that the weather always dictates when it’s better attend indoor or outdoor events, making it hard to find something to do that might be better to check out, depending on the forecast that day.
+              
+              This is where Rain or Shine comes in!
+              </p>
           </div>
+        </div>
 
-           
-              </div>
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="https://noonanelectricalservices.com/wp-content/uploads/2017/07/man-portrait-silhouette.gif" class="card-img" alt="..." height="100%" width="100%">
-                  </div>
-                  <div class="col-md-8">
+        <div class="row" id="aboutLine1">
+          <div class="col-md-6" id="aboutLine1">
+            <p> Rain or Shine is an app that will show the user what events they can attend, depending on the weather exclusively for that day and over the next week. This makes for proper planning for the user who wants to find something to do by themselves, or with friends and family members.
+
+              This would also be useful for visitors who are looking for a genuine New York City experience outside of the usual tourist sites </p>
+          </div>
+        </div>
+
+
+        <div class="card border-light mb-3" style="max-width: 18rem;">
+          <div class="card-header">Developers</div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="antonio.png" class="card-img" alt="..." height="75%" width="100%">
+                </div>
+                <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Austin Axelsen</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title">Antonio Berryman</h5>
+                        <a href="https://www.linkedin.com/in/antonioberryman/" target="_blank"> Connect with Antonio on LinkedIn</a>
+                        <br>
+                        <a href="https://github.com/taureanfighter" target="_blank"> Antonio's GitHub Repo</a>
                     </div>
-                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="austin.png" class="card-img" alt="..." height="100%" width="100%">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Austin Axelsen</h5>
+                        <a href="https://www.linkedin.com/in/austin-axelsen-aa9916b3/" target="_blank"> Connect with Austin on LinkedIn</a>
+                        <br>
+                        <a href="https://github.com/austinaxe" target="_blank"> Austin's GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="brus.png" class="card-img" alt="..." height="100%" width="100%">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Brus Palaj</h5>
+                        <a href="https://www.linkedin.com/in/brus-palaj/" target="_blank"> Connect with Brus on LinkedIn</a>
+                        <br>
+                        <a href="https://github.com/bruspdoee" target="_blank"> Brus' GitHub Repo </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="kenny.png" class="card-img" alt="..." height="100%" width="100%">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Kenny Huang</h5>
+                        <a href="https://www.linkedin.com/in/huangkenny/" target="_blank"> Connect with Kenny on LinkedIn</a>
+                        <br>
+                        <a href="https://github.com/khny258" target="_blank"> Kenny's GitHub Repo </a>
+                    </div>
                 </div>
               </div>
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="https://noonanelectricalservices.com/wp-content/uploads/2017/07/man-portrait-silhouette.gif" class="card-img" alt="..." height="100%" width="100%">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Brus Palaj</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="https://noonanelectricalservices.com/wp-content/uploads/2017/07/man-portrait-silhouette.gif" class="card-img" alt="..." height="100%" width="100%">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Kenny Huang</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-        
-			</div>
-		</div>
+        </div>
+    </div>
   </div>
-  
-  
+
 </body>
 
 </html>
